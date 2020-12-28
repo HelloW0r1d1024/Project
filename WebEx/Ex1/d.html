@@ -1,0 +1,56 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>信息输入</title>
+</head>
+<body>
+<form action="#" method="get">
+     <table align="center" >
+          <tr>
+               <td><h1 align="center" ><u>请留下个人资料</u></h1></td>
+          </tr>
+          <tr>
+               <td width="40px">姓名:</td>
+               <td><input type="text" name="yourname" size=10></td>
+          </tr>
+          <tr>
+               <td width="40px">E-mail:</td>
+               <td><input type="text" name="邮箱" value="用户名@域名"  pattern="^\w+@\w+.com$"></td>
+          </tr>
+          <tr>
+               <td width="40px">电话：</td>
+               <td><input type="text" name="电话" pattern="^\d{11,11}$"></td>
+          </tr>
+          <tr>
+               <td width="40px">性别:</td>
+               <td><input type="radio" name="sex" value="girl" checked="checked">女
+                    <input type="radio" name="sex" value="man">男</td>
+          </tr>
+          <tr>
+               <td width="40px">年龄：</td>
+               <td><select name="age" size="1">
+                    <option value="1" selected >20以下</option>
+                    <option value="2" >20</option>
+                    <option value="3" >21</option>
+                    <option value="4" >22</option>
+                    <option value="5" >23</option>
+                    <option value="6" >24</option>
+                    <option value="7" >25</option>
+                    <option value="8" >25以上</option></td>
+          </tr>
+          <tr>
+               <td width="40px">留言板：</td>
+               <td><textarea name="what" rows="4" cols="50" wrap="hard">
+				</textarea></td>
+          </tr>
+          
+          <tr>
+               <td width="40px">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="全部重写">
+               </td>
+          </tr>
+     </table>
+</form>
+</body>
+</html>

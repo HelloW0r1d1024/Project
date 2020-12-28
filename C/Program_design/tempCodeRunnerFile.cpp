@@ -1,0 +1,1 @@
+srand((unsigned)time(NULL));    // 重新播种

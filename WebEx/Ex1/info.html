@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表单范例</title>
+        <style>
+            label{
+                cursor: pointer;
+                display: inline-block;
+                padding: 4px 8px;
+                text-align: right;
+                width: 150px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2 align="center">
+            <u>请留下个人资料</u>
+        </h2>
+
+        <form>
+            <div>
+                <label for="name"><b>姓名：</b></label>
+                <input id="name" type="text"/> <br>    
+            </div>
+            
+            <div>
+                <label for="email"><b>E-mail：</b></label>
+                <input id="email" type="email"/> <br>
+            </div>
+            
+            <div>
+                <label for="phoneNum"><b>电话：</b></label>
+                <input id="phoneNum" type="text" maxlength="11" pattern="^1\d{10}$"/> <br>
+            </div>
+            
+            <div>
+                <label for="sex"><b>性别：</b></label>
+                <input id="sex" type="radio" checked/>女 <input type="radio" name="sex"/>男 <br>
+            </div>
+            
+            <div>
+                <label for="age"><b>年龄：</b></label>
+                <select id="age"size="1">
+                    <option>20以下</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>25以上</option>
+                </select> <br>
+            </div>
+
+            <div>
+                <label for="msg"><b>留言版：</b></label>
+                <textarea id="msg" rows="4" cols="40" style="vertical-align:middle;"></textarea>
+            </div>
+
+            <div>
+                <label><b>您的爱好：</b>
+                    <span>
+                        <input type="checkbox">运动<br>
+                        <input type="checkbox">阅读<br>
+                        <input type="checkbox">听音乐<br>
+                        <input type="checkbox">旅游<br>
+                    </span>
+                </label>
+            </div>
+            
+            <div align="center">
+                <input type="submit" value="提交">
+                <input type="reset" value="全部重写">
+            </div>
+
+        </form>
+    </body>
+</html>

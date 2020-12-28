@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>弹头奇兵-消耗品市场</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://newaow.daxi9527.com/bundles/game/game/dt/market/css/style.css?v1.0.4" rel="stylesheet">
+    <link href="http://newaow.daxi9527.com/bundles/game/css/laypage.css?v1.0.4" rel="stylesheet">
+</head>
+<body>
+
+<div class="box_topbg">
+    <div class="box_top box pr">
+        <div class="top_nav pa">
+            <a href="/game/dt/index" class="top_nav_link tnl_1"></a>
+            <a href="/game/dt/news/list" class="top_nav_link tnl_2"></a>
+            <a href="#" class="top_nav_link tnl_3"></a>
+            <a href="#" class="top_nav_link tnl_4"></a>
+                    </div>
+        <div class="box_topinfo pa">
+                            <div class="box_login_btn pr fr" id="NoLogin">
+                    <a onclick="popup('.login_box')"><img id="btn_gologin"
+                                                          src="http://newaow.daxi9527.com/bundles/game/game/dt/market/images/no_login.png?v1.0.4"
+                                                          alt=""></a>
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+<!-- box_login {-->
+<div class="pop_box pr pop none login_box">
+    <div class="loginbox_con pop_box_bg1">
+        <a href="javascript:;" class="btn_close close_pop"></a>
+        <div class="pop_title">私人保险库身份验证</div>
+        <table border="0" cellspacing="0" cellpadding="0" class="reg_con">
+            <tr>
+                <td width="105">迎龙通行证：</td>
+                <td><input id="txtUser_Name" name="txtUser_Name" type="text" class="input_box"/></td>
+            </tr>
+            <tr>
+                <td>通行证密码：</td>
+                <td><input id="txtLogin_Password" name="txtLogin_Password" type="password" class="input_box"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="pt10">
+                    <a onclick="doDtLogin()" class="btn_reg gologin_ok">验证身份</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    <div class="box_conbg">
+        <div class="box_con box">
+            <div class="con_bg con_bg_index pr">
+                <div class="con_top_txt pa">欢迎光临！我们这里价格公道，服务周到！你可以购买军火，也可以试试自己的手气赌一把——只要你手里有黄金，你就是我们的VIP。</div>
+                <a href="/game/dt/market/lottery" class="link_pages"></a>
+                <div class="box_item_list">
+                    <ul class="item_list clearfix index_item" id="itemList">
+                        数据加载中.....
+                    </ul>
+                    <div id="laypage"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- footer {-->
+<!--} footer -->
+
+<!-- reg_box {-->
+<!--} reg_box -->
+
+<!-- box_login {-->
+<!-- }box_login-->
+
+<!-- 货物描述 -->
+<!-- pop_box {-->
+    <div class="pop_box pr pop none check_box">
+        <div class="pop_box_bg1">
+            <a href="javascript:;" class="btn_close close_pop"></a>
+            <div class="pop_title">货物描述</div>
+            <div id="MerchandiseInfo" class="pop_con_box clearfix">
+
+            </div>
+        </div>
+    </div>
+    <!-- }pop_box-->
+
+    <!-- 确认购买 -->
+    <!-- pop_box {-->
+    <div class="pop_box pr pop none pay_box">
+        <div class="pop_box_bg1">
+            <a href="javascript:;" class="btn_close close_pop"></a>
+            <div class="pop_title">确认购买</div>
+            <div class="pop_con_box clearfix" id="buyInfo">
+
+            </div>
+        </div>
+    </div>
+    <!-- }pop_box-->
+
+    <!-- 打包发货 -->
+    <!-- pop_box {-->
+    <div class="pop_box pr pop none package_box">
+        <div class="pop_box_bg2">
+            <a href="javascript:;" class="btn_close close_pop"></a>
+            <div class="pop_title">打包发货</div>
+            <div class="pop_con_box clearfix">
+                <div class="item_pic fl">
+                    <img src="http://newaow.daxi9527.com/bundles/game/game/dt/market/images/img_01.png?v1.0.4" alt="">
+                </div>
+                <div class="item_info fl">
+                    <p>名称：ak－47 <span class="pl20">拥有数量：14 个</span></p>
+                    <p>购买数量： <input type="text" class="input_box w2 tc"> 个</p>
+                    <div class="pt5">发货地址：
+                        <select name="" id="" class="select_box w1">
+                            <option value="1">激战无双</option>
+                            <option value="1">激战无双</option>
+                            <option value="2">激战无双</option>
+                        </select>
+                        服务器
+                    </div>
+                    <p class="pt5">收&ensp;货&ensp;人：
+                        <select name="" id="" class="select_box w3">
+                            <option value="1">激战无双的老家伙</option>
+                            <option value="1">激战无双的老家伙</option>
+                            <option value="2">激战无双的老家伙</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="fl pop_btn_box pop_btn_box2 pt0">
+                    <p class="tc">交易验证码：<input type="text" class="input_box w1"> <img
+                                src="http://newaow.daxi9527.com/bundles/game/game/dt/market/images/yzm.png?v1.0.4" alt=""
+                                class="img_yz"></p>
+                    <p class="cyl tc mt15">请确保目标角色在线同时预留包裹空间</p>
+                    <a href="javascript:;" class="btn_reg mt15 close_pop" onclick="tips('.tips1')">立即发货</a>
+                    <a href="javascript:;" class="btn_reg mt15 close_pop" onclick="tips('.tips3')">放回仓库</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- }pop_box-->
+
+    <!-- 购买彩票 -->
+    <!-- pop_box {-->
+    <div class="pop_box pr pop none tickets_box">
+        <div class="pop_box_bg2">
+            <a href="javascript:;" class="btn_close close_pop"></a>
+            <div class="pop_title">购买彩票</div>
+            <div class="pop_con_box clearfix">
+                <div class="item_pic fl">
+                    <img src="http://newaow.daxi9527.com/bundles/game/game/dt/market/images/img_02.png?v1.0.4" alt="">
+                </div>
+                <div class="item_info fl">
+                    <p>名称：<span class="cpink2">彩票（抽奖专用道具）</span></p>
+                    <p>单价： 1000元宝</p>
+                    <p>购买数量： <input type="text" class="input_box w2 tc"> 个</p>
+                    <p>总价：<span class="cyl">14000</span> 元宝</p>
+                    <p>您当前元宝数量：10000元宝</p>
+                </div>
+                <div class="fl pop_btn_box">
+                    <p class="tc">订单号：20123-45678-35678-83455</p>
+                    <p class="tc">交易验证码：<input type="text" class="input_box w1"> <img
+                                src="http://newaow.daxi9527.com/bundles/game/game/dt/market/images/yzm.png?v1.0.4" alt=""
+                                class="img_yz"></p>
+                    <a href="javascript:;" class="btn_reg mt15" onclick="popup('.tickets_pay_box')">立即购买</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- }pop_box-->
+    <!-- 彩票购买成功！ -->
+    <!-- pop_box {-->
+    <div class="pop_box pr pop none tickets_pay_box">
+        <div class="pop_box_bg2">
+            <a href="javascript:;" class="btn_close close_pop"></a>
+            <div class="pop_title">彩票购买成功！</div>
+            <div class="pop_con_box clearfix">
+                <div class="item_pic fl">
+                    <img src="http://newaow.daxi9527.com/bundles/game/game/dt/market/images/img_02.png?v1.0.4" alt="">
+                </div>
+                <div class="item_info fl">
+                    <p>您已成功购买 <span class="cpink2">彩票（抽奖专用道具）</span><span class="cyl">14</span> 张</p>
+                    <p>单价： 1000元宝</p>
+                    <p class="f16 cyl fb mt30">是否立即使用彩票？</p>
+                </div>
+                <div class="fl pop_btn_box pop_btn_box2 pt0">
+                    <a href="javascript:;" class="btn_reg mt15">立即使用</a>
+                    <a href="javascript:;" class="btn_reg mt15 close_pop">稍后再说</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- }pop_box-->
+<!-- tips {-->
+<div class="tips tips1 none"><span>发送已经完成！请查看相关角色是否收到道具！</span>
+    <p class="mt30"><a href="javascript:;" class="btn_tips btn_fh closetips">我知道了</a></p></div>
+<div class="tips tips2 none">发送失败！请确认目标角色是否在线，并且预留了包裹空间。<p class="mt30"><a href="javascript:;"
+                                                                           class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips3 none">道具已购买成功并放入仓库。如果需要在游戏内使用，请进入仓库后选择发货。<p class="mt30"><a href="javascript:;"
+                                                                                   class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips4 none">购买失败！请确认您的迎龙账号里有足够的迎龙元宝！<p class="mt30"><a href="javascript:;"
+                                                                        class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips5 none">彩票购买成功并已放入保险库！<p class="mt30"><a href="javascript:;"
+                                                              class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips6 none">购买失败！请确认您的迎龙账号里有足够的迎龙元宝！<p class="mt30"><a href="javascript:;"
+                                                                        class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips8 none">发送失败！请确认目标角色是否在线，并且预留了包裹空间。<p class="mt30"><a href="javascript:;"
+                                                                           class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips9 none">道具已购买成功并放入仓库。如果需要在游戏内使用，请进入仓库后选择发货。<p class="mt30"><a href="javascript:;"
+                                                                                   class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips10 none">箱子开启失败！请确认你的仓库中有足够的彩票道具。<p class="mt30"><a href="javascript:;"
+                                                                         class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+<div class="tips tips11 none">所有可发送道具均已发送成功，未发送的道具将放入仓库。如果需要在游戏内使用，请进入仓库后选择发货。<p class="mt30"><a href="javascript:;"
+                                                                                                 class="btn_tips btn_fh closetips">我知道了</a>
+    </p></div>
+
+<div class="tips msgbox none"><span>错误信息</span>
+    <p class="mt30"><a href="javascript:;" class="btn_tips btn_fh closetips">我知道了</a></p></div>
+<div class="tips msgboxload none"><span>错误信息</span>
+    <p class="mt30"><a href="javascript:;" class="btn_tips btn_fh closetipsload">我知道了</a></p></div>
+
+<div class="footer">
+    <div class="bottom_mainbox">
+        <center>
+            <table>
+                <tbody>
+                <tr>
+                    <td><a href="http://www.818long.com" target="_blank"><img
+                                    src="http://newaow.daxi9527.com/bundles/game/game/dt/images/footer_bg.png?v1.0.4" width="154"
+                                    height="56"></a></td>
+
+                </tr>
+                </tbody>
+            </table>
+            -上海迎龙文化传播有限公司- Copyright@2015 Aow.818long.Com 版权所有<br>
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank"><font color="#4e4e4e">沪ICP备14028053号-1</font></a>，沪网文【2012】0281-043号</a>
+            ，ICP经营许可证编号： 沪B2-20130056<br>
+        </center>
+    </div>
+</div>
+
+
+<!-- } tips-->
+
+<div class="pop_bg bg none"></div>
+<script type="text/javascript" src="http://newaow.daxi9527.com/bundles/game/game/dt/js/plugin/jquery/jquery.min.js?v1.0.4"></script>
+<script type="text/javascript" src="http://newaow.daxi9527.com/bundles/game/game/dt/js/Common.js?v1.0.4"></script>
+<script type="text/javascript" src="http://newaow.daxi9527.com/bundles/game/game/dt/js/script.js?v1.0.4"></script>
+<script type="text/javascript" src="http://newaow.daxi9527.com/bundles/game/js/layer.js?v1.0.4"></script>
+<script type="text/javascript" src="http://newaow.daxi9527.com/bundles/game/js/laypage.js?v1.0.4"></script>
+    <script type="text/javascript">
+        function doDtLogin() {
+            var username = $('#txtUser_Name').val();
+            var password = $('#txtLogin_Password').val();
+            if (username.length <= 0) {
+                showTips('请输入账号名', 'fail');
+                return false;
+            }
+            if (password.length <= 0) {
+                showTips('请输入密码', 'fail');
+                return false;
+            }
+
+            $.ajax({
+                url: '/game/dt/login',
+                type: 'post',
+                dataType: 'json',
+                data: {username: username, password: password},
+                success: function (response) {
+                    var result = response.result;
+                    if (result === 'success') {
+                        showTips('登录成功', 'ok');
+                        location.reload();
+                    } else {
+                        showTips(response.data, 'fail');
+                    }
+                },
+                error: function (xhr, type, errorThrown) {
+                    alert(type + ':' + errorThrown);
+                }
+            });
+
+        }
+
+        function doDtLoginOut() {
+            $.ajax({
+                url: '/game/dt/login/out',
+                type: 'post',
+                dataType: 'json',
+                data: {},
+                success: function (response) {
+                    var result = response.result;
+                    if (result === 'success') {
+
+                    } else {
+
+                    }
+                    location.reload();
+                },
+                error: function (xhr, type, errorThrown) {
+                    alert(type + ':' + errorThrown);
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript" src="http://newaow.daxi9527.com/bundles/game/game/dt/js/market/item.list.js?v1.0.4"></script>
+</body>
+</html>

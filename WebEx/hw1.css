@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#wrap{
+    width:960px;
+    height:auto;
+    border:1px solid purple;
+    border-radius:10px;
+    margin:5px auto;
+}
+
+header{
+    width:960px;
+    height:100px;
+    border:1px solid red;
+    border-radius:10px;
+    margin:0px auto;
+}
+
+nav{
+    width:960px;
+    height:50px;
+    border:1px solid green;
+    border-radius:10px;
+    margin:0px 0px;
+}
+
+main{
+    width:960px;
+    height:420px;
+    border:1px solid blue;
+    border-radius:10px;
+    margin:0px 0px;
+}
+
+article{
+    width:760px;
+    height:420px;
+    border:1px solid green;
+    border-radius:10px;
+    margin:0px 0px;
+    float:left;
+}
+
+aside{
+    width:97px;
+    height:420px;
+    border:1px solid blue;
+    border-radius:10px;
+    margin:0px 0px;
+    float:left;
+}
+
+footer{
+    width:960px;
+    height:100px;
+    border:1px solid gray;
+    border-radius:10px;
+    margin:0px 0px;
+    clear:both
+}
